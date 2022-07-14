@@ -41,7 +41,6 @@ class Person:
     def get_city_population(self):
         return self.population
 
-# сделать экземпляр класса person и вызвать новые методы.
 
 Kate = Person(176, 380000)
 print(Kate.get_person_room())
