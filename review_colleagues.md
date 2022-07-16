@@ -1,6 +1,7 @@
 Я изучила работу https://github.com/Novvval/HW_21.3/blob/master/app.py
 Я обнаружила следующие запахи плохого кода:
 
+
 app.py строчки 40 и 66
 повторяющиеся функции
 было:
@@ -18,16 +19,19 @@ def get_items(self):
     return self._items
 
 
+
 app.py строчка 96
 непонятное название функции, что она делает
 было: def main()
 исправила: def goods_delivery()
 
 
+
 app.py строчка 147
 непонятное название функции, что она делает
 было: def display_contents()
 исправила: def get_stored_goods()
+
 
 
 app.py строчка 74
@@ -37,7 +41,6 @@ class Shop(Store):
     def __init__(self):
         super().__init__()
         self._capacity = 20
-
 исправлено: (добавлена функиция с пояснением числа 5)
 def add(self, product, amount):
         if (self.get_free_space - amount) >= 0 and self.get_unique_items_count < 5:
@@ -48,6 +51,7 @@ def add(self, product, amount):
                 self.get_items[product] = amount
         else:
             print(f"Не хватает места! Попробуй еще раз!")
+
 
 
 app.py строчка 164
@@ -74,6 +78,7 @@ def determine_places(request):
         request.to = shop
         request.from = store
     return request.to, request.from
+
 
 
 app.py
