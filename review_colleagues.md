@@ -8,11 +8,9 @@ app.py строчки 40 и 66
 @property
     def items(self):
         return self._items
-
 @property
     def get_items(self):
         return self._items
-
 исправлено: (требуется удалить первую функцию def items)
 @property
 def get_items(self):
